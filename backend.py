@@ -69,6 +69,16 @@ _meta: dict[str, dict]          = {}   # run_id → {filename, status, report}
 # Endpoints
 # ─────────────────────────────────────────────────────────────────────────────
 
+@app.get("/")
+def root():
+    return {
+        "service": "ExperimentOS API",
+        "status":  "ok",
+        "docs":    "/docs",
+        "health":  "/health",
+    }
+
+
 @app.get("/health")
 def health():
     return {"status": "ok", "version": "1.0.0"}
