@@ -1,0 +1,14 @@
+# Backend lives on Render — Vercel only serves the static frontend (index.html)
+app.py
+backend.py
+mlflow_utils.py
+requirements.txt
+render.yaml
+graph/
+ml/
+mlruns/
+mlartifacts/
+__pycache__/
+*.py
+*.csv
+*.md
