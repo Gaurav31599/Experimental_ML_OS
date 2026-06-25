@@ -1,0 +1,16 @@
+streamlit>=1.30
+langgraph>=1.0
+mlflow>=3.0
+scikit-learn>=1.4
+xgboost>=2.0
+pandas
+numpy
+scipy
+plotly
+matplotlib
+tabulate
+
+# Web backend (FastAPI server deployed on Render)
+fastapi
+uvicorn[standard]
+python-multipart
