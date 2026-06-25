@@ -83,7 +83,7 @@ class ExperimentOS extends React.Component {
   _es = null;
 
   state = {
-    backendUrl:'http://localhost:8000',
+    backendUrl:'https://experimental-ml-os.onrender.com',
     isLive:false,
     backendChecked:false,
     status:'idle',
@@ -112,7 +112,7 @@ class ExperimentOS extends React.Component {
   };
 
   componentDidMount() {
-    const saved = localStorage.getItem('experimentos_backend_url') || 'http://localhost:8000';
+    const saved = localStorage.getItem('experimentos_backend_url') || 'https://experimental-ml-os.onrender.com';
     this.setState({backendUrl:saved}, () => this._checkHealth());
   }
 
